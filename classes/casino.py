@@ -36,6 +36,7 @@ print(d.roll())
 print(d.roll())
 
 
+# Generating a list with all cards combinations and shuffle 3 at the time
 
 class Deck(object):
     def shuffle(self):
@@ -44,7 +45,7 @@ class Deck(object):
         self.cards = []
         for suit in suits:
             for rank in ranks:
-                self.cards.append(suit + " of " + rank)
+                self.cards.append(rank + " of " + suit)
         random.shuffle(self.cards)
      
     def deal(self):
